@@ -1,0 +1,6 @@
+aws_region                 = "ap-south-1"
+env                        = "prod"
+cidr_block                 = "10.0.0.0/16"
+execution_role_arn         = "arn:aws:iam::123456789012:role/ecsTaskExecutionRole"
+container_image            = "123456789012.dkr.ecr.ap-south-1.amazonaws.com/data-processor:prod"
+db_credentials_secret_name = "prod-db-credentials"
