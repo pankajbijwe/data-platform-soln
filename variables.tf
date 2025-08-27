@@ -32,3 +32,16 @@ variable "db_credentials_secret_name" {
   type        = string
   default     = "db-credentials"
 }
+
+variable "autoscaling_min_capacity" {
+  default = 10
+}
+variable "autoscaling_max_capacity" {
+  default = 100
+}
+variable "dynamodb_table_name" {
+  default = "prod-high-tps-table"
+}
+variable "kinesis_stream_name" {
+  default = "prod-data-stream"
+}
